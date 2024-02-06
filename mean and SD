@@ -1,0 +1,6 @@
+echo give three numbers
+read a b c
+m=$(echo "scale=3;($a+$b+$c)/3" |bc )
+sd=$(echo "scale=3;sqrt((($a-$m)^2+($c-$m)^2)/3)" |bc )
+echo mean= $m
+echo SD= $sd
