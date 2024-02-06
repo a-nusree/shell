@@ -1,0 +1,12 @@
+if [ -z "$1" ]; then
+echo "usage : $0 <year> "
+exit 1
+fi
+year=$1
+echo "******************"
+echo "    calender"
+echo "******************"
+cal $year
+echo "******************"
+echo "script execution completed"
+echo "******************"
