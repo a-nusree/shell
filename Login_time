@@ -1,0 +1,4 @@
+echo "Current date & time: $(date)"
+echo "No of users:" $(who | wc -l ) 
+echo "Terminal name: $TERM "
+echo "Login date & time: "$(who | awk '{print $3, $4}' )
