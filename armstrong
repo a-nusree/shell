@@ -1,0 +1,15 @@
+echo enter a number
+read n
+t=$(($n))
+while [ $n -gt 0 ]
+do 
+r=$((n%10))
+s=$(($s + $r*$r*$r))
+n=$(($n/10))
+done
+if [ $t == $s ]
+then
+echo "$s armstrong number"
+else
+echo "$t not an armstrong number"
+fi
